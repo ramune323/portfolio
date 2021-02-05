@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* ====================================================================
+ mixin
+===================================================================== */
+
+/* media_query
+------------------------------------------------------ */
+$breakpoints: (
+  'sm': 'screen and (max-width: 767px)',
+  'md': 'screen and (min-width: 768px)',
+  'md-max': 'screen and (max-width: 1024px)',
+  'lg': 'screen and (min-width: 1025px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+/* ====================================================================
+ color
+===================================================================== */
+
+$base-gray-color: #707070;
+$base-black-color: #333;
+$accent-light-color: #E3CBB3;
+$accent-dark-color: #D08C49;
+
+
+/* ====================================================================
+ common
+===================================================================== */
+
+@include mq(sm) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@include mq(md) {
+  .is-sp {
+    display: none;
+  }
+}
+
+@include mq(lg) {
+  .is-tab {
+    display: none;
+  }
+}
+
+body {
+  color: $base-gray-color;
+  font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
+  line-height: 1.7;
+  letter-spacing: .08em;
+  font-size: 16px;
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  transition: .2s;
+
+  &:hover {
+    color: $accent-dark-color;
+  }
+}
+
+.inner {
+  @include mq(md) {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 60px;
+    box-sizing: content-box;
+  }
+
+  @include mq(sm) {
+    padding: 0 20px;
+  }
+}
+
+.main {
+  @include mq(md) {
+    padding-top: 70px;
+  }
+
+  @include mq(sm) {
+    padding-top: 60px;
+  }
+}
+
+.filter {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.section {
+  padding-top: 160px;
+}
+
+/* util
+------------------------------------------------------ */
+@mixin util-title($width) {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  color: $base-black-color;
+  position: relative;
+  display: block;
+  text-align: center;
+
+  @include mq(md-max) {
+    font-size: 24px;
+  }
+
+  @include mq(md) {
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      width: $width;
+      height: 3px;
+      background-color: $base-black-color;
+    }
+  }
+  
+  @include mq(sm) {
+    font-size: 20px;
+    text-align: left;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      width: $width;
+      height: 3px;
+      background-color: $base-black-color;
+    }
+  }
+
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.util-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: $accent-dark-color;
+  text-align: center;
+  margin-top: 10px;
+
+  @include mq(md-max) {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  @include mq(sm) {
+    font-size: 18px;
+    margin-top: 0;
+    margin-left: 10px;
+    text-align: left;
+  }
+}
+
+.util-text {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 80px;
+
+  @include mq(sm) {
+    margin-top: 60px;
+    text-align: left;
+  }
+}

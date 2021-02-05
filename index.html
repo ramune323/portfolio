@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyoko's Portfolio</title>
+  <meta name="description" content="ポートフォリオサイトです">
+
+  <link rel="icon" href="/img/favicon.ico">
+  <link rel="icon" href="/img/apple-touch-icon-180x180.png" sizes="180x180">
+
+  <!-- reset css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css" media="screen and (max-width:767px)">
+  <!-- iScroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="js/drawer.js"></script>
+  <!-- wow -->
+  <script src="/js/wow.min.js"></script>
+  <link rel="stylesheet" href="/css/wow-animate.css">
+  <!-- textillate -->
+  <link rel="stylesheet" href="/css/textillate-animate.css">
+  <script src="/js/jquery.textillate.js"></script>
+  <script src="/js/jquery.fittext.js"></script>
+  <script src="/js/jquery.lettering.js"></script>
+  <!-- original -->
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js"></script>
+</head>
+<body class="drawer drawer--right">
+
+  <!-- header -->
+  <header class="header">
+    <div class="header-inner inner">
+      <div class="header-logo"><a href=""><img src="/img/logo.png" alt="ヘッダーロゴ"></a></div>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav header-nav">
+        <ul class="drawer-menu header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-item-link" href="#about">ABOUT</a></li>
+          <li class="header-nav-item">
+            <a class="header-nav-item-link" href="#skills">SKILLS</a></li>
+          <li class="header-nav-item">
+            <a class="header-nav-item-link" href="#works">WORKS</a></li>
+          <li class="header-nav-item">
+            <a class="header-nav-item-link" href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- /.header -->
+  <main class="main top-img">
+
+    <!-- top -->
+    <section id="top" class="top">
+      <div class="top-message">
+        <h1 class="top-title js-top-title" data-in-effect="fadeInLeft" data-in-delayScale="0.6">Welcome to my Portfolio Site!</h1>
+        <p class="top-subtitle js-top-subtitle"data-in-effect="bounceIn" data-in-delayScale="0.6">アクセスいただきありがとうございます</p>
+        <div class="wow fadeInLeft" data-wow-delay="1.8s"><a href="#contact" class="top-contact-btn">CONTACT</a></div>
+      </div>
+    </section>
+    <!-- /.top -->
+
+    <div class="filter">
+      <!-- about -->
+      <section id="about" class="about inner section">
+        <div class="wow fadeInUp" data-wow-delay=".1s">
+          <h2 class="about-title">ABOUT</h2>
+          <p class="util-subtitle">自己紹介</p>
+        </div>
+        <div class="about-wrap">
+          <img src="/img/profile.png" alt="プロフィール" class="about-img wow fadeInUp" data-wow-delay=".1s">
+          <div class="about-profile wow fadeInUp" data-wow-delay=".1s">
+            <p class="about-profile-name-en">Kimura Kyoko</p>
+            <p class="about-profile-name-ja">きむら きょうこ</p>
+            <p class="about-profile-text">
+              東京都在住。24歳。SE3年目。<br>
+              現在、システムエンジニアとして業務システムの開発・保守を行なっています。<br>
+              設計書・マニュアル等のドキュメント作成、プログラム開発、テストまで、<br class="is-pc">一通りの工程は経験させていただきました。<br>
+              不特定多数の人の目に触れるものを作りたい、自分の想像したものを形にしたい<br class="is-pc">という思いから、Web制作のお仕事に興味を持ちました。<br><br>
+              趣味はYouTube、バラエティ番組を見ること。<br>
+              気分転換に読書をしたり、ギターやピアノを弾いたりすることもあります。<br>
+              よろしくお願いいたします。
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- /.about -->
+  
+      <!-- skills -->
+      <section id="skills" class="skills inner section">
+        <div class="wow fadeInUp" data-wow-delay=".1s">
+          <h2 class="skills-title">SKILLS</h2>
+          <p class="util-subtitle">スキル</p>
+        </div>
+        <p class="util-text wow fadeInUp" data-wow-delay=".1s">LP作成で使用した技術一覧です。<br><br>
+          <span class="skills-text-inline">※</span>C#は業務で使用している言語です。<br>LPには使用していませんが、現在保有しているスキルとしてこちらに記載しています。
+        </p>
+        <ul class="skills-list">
+          <li class="skills-items wow fadeInUp" data-wow-delay=".1s">
+            <div class="skills-item-img"><img src="./img/html5.png" alt="HTML5"></div>
+            <p class="skills-item-text">HTML5</p>
+          </li>
+          <li class="skills-items wow fadeInUp" data-wow-delay=".1s">
+            <div class="skills-item-img"><img src="./img/css3.png" alt="CSS3"></div>
+            <p class="skills-item-text">CSS3</p>
+          </li>
+          <li class="skills-items wow fadeInUp" data-wow-delay=".1s">
+            <div class="skills-item-img"><img src="./img/javascript.png" alt="JavaScript"></div>
+            <p class="skills-item-text">JavaScript<br class="is-tab">(jQuery)</p>
+          </li>
+          <li class="skills-items wow fadeInUp" data-wow-delay=".1s">
+            <div class="skills-item-img"><img src="./img/xd.png" alt="Adobe XD"></div>
+            <p class="skills-item-text">Adobe XD</p>
+          </li>
+          <li class="skills-items wow fadeInUp" data-wow-delay=".1s">
+            <div class="skills-item-img"><img src="./img/sass.png" alt="Sass"></div>
+            <p class="skills-item-text">Sass</p>
+          </li>
+          <li class="skills-items wow fadeInUp" data-wow-delay=".1s">
+            <div class="skills-item-img"><img src="./img/csharp.png" alt="csharp"></div>
+            <p class="skills-item-text">C#</p>
+          </li>
+        </ul>
+      </section>
+      <!-- /.skills -->
+  
+      <!-- works -->
+      <section id="works" class="works inner section">
+        <div class="wow fadeInUp" data-wow-delay=".1s">
+          <h2 class="works-title">WORKS</h2>
+          <p class="util-subtitle">作品</p>
+        </div>
+        <p class="util-text wow fadeInUp" data-wow-delay=".1s">上記のスキルを使用して作成したLPです。<br>画像をクリックするとサイトが表示されます。<br>すべてレスポンシブ対応を行なっています。</p>
+        <ul class="works-list">
+          <li class="works-list-items wow fadeInUp" data-wow-delay=".1s">
+            <a href="https://kyoco-portfolio.com" class="works-item-link">
+              <div class="works-item-img"><img src="/img/portfolio.png" alt="ポートフォリオサイト"></div>
+            </a>
+            <div class="works-item-body">
+              <p class="works-item-title">制作期間：7日間</p>
+              <p class="works-item-text">デザインカンプを作成し、一からコーディングしたポートフォリオサイトです。jQueryを使用して、動きのあるページに仕上げました。</p>
+              <a href="" class="works-item-icon github">GitHub</a>
+              <a href="" class="works-item-icon xd">XD</a>
+            </div>
+          </li>
+          <li class="works-list-items wow fadeInUp" data-wow-delay=".1s">
+            <a href="https://daytrial.kyoco-portfolio.com" class="works-item-link">
+              <div class="works-item-img"><img src="/img/daytrial.png" alt="デイトラ"></div>
+            </a>
+            <div class="works-item-body">
+              <p class="works-item-title">制作期間：14日間</p>
+              <p class="works-item-text">デザインカンプをもとにコーディングしたサイトです。Sassを使用し、コンテンツごとにファイルを分割することで、保守性を考慮しました。</p>
+              <a href="https://github.com/ramune323/daytrial" class="works-item-icon github">GitHub</a>
+            </div>
+          </li>
+          <li class="works-list-items wow fadeInUp" data-wow-delay=".1s">
+            <a href="https://bootstrap.kyoco-portfolio.com" class="works-item-link">
+              <div class="works-item-img"><img src="/img/bootstrap.png" alt="bootstrap"></div>
+            </a>
+            <div class="works-item-body">
+              <p class="works-item-title">制作期間：1日間</p>
+              <p class="works-item-text">HTMLとBootstrapで作成した、シンプルな静的サイトです。要素の横並びでは、Gridレイアウトを使用しています。</p>
+              <a href="https://github.com/ramune323/bootstrap" class="works-item-icon github">GitHub</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- /.works -->
+  
+      <!-- contact -->
+      <section id="contact" class="contact inner section">
+        <div class="wow fadeInUp" data-wow-delay=".1s">
+          <h2 class="contact-title">CONTACT</h2>
+          <p class="util-subtitle">連絡先</p>
+        </div>
+        <p class="util-text wow fadeInUp" data-wow-delay=".1s">Twitter、またはメールにて受け付けております。<br>お気軽にご連絡ください。</p>
+        <ul class="contact-list">
+          <li class="contact-list-items wow fadeInUp" data-wow-delay=".1s">
+            <a href="https://twitter.com/kico6823" class="contact-list-link">
+              <div class="contact-item-img"><img class="twitter-img" src="/img/twitter.png" alt="Twitter"></div>
+              <p class="contact-item-text">Twitter</p>
+            </a>
+          </li>
+          <li class="contact-list-items wow fadeInUp" data-wow-delay=".1s">
+            <a href="mailto:kyco.ari67@gmail.com" class="contact-list-link">
+              <div class="contact-item-img"><img class="email-img" src="/img/mail.png" alt="e-mail"></div>
+              <p class="contact-item-text">E-Mail</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- /.contact -->
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p class="footer-copyright"><small lang="en">© 2021 kyo-co</small></p>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- page_top -->
+    <div id="page_top">
+      <a href="#"></a>
+    </div>
+  </main>
+</body>
+</html>

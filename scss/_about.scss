@@ -1,0 +1,95 @@
+@import "config";
+
+/* about
+------------------------------------------------------ */
+.about-title {
+  @include util-title(40.5%);
+
+  @include mq(sm) {
+    @include util-title(calc(100% - 93px));
+  }
+}
+
+.about-wrap {
+  @include mq(lg) {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @include mq(md-max) {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+
+.about-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 20px $accent-light-color;
+  // margin-left: 55px;
+  box-sizing: content-box;
+  vertical-align: middle;
+  // align-items: center;
+
+  @include mq(sm) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.about-profile {
+  @include mq(md-max) {
+    margin-top: 60px;
+  }
+
+  @include mq(sm) {
+    margin-top: 50px;
+  }
+}
+
+.about-profile-name-en {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: $base-black-color;
+
+  @include mq(sm) {
+    display: block;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+.about-profile-name-ja {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: $accent-dark-color;
+  margin-left: 25px;
+  height: 33px;
+  line-height: 33px;
+
+  @include mq(sm) {
+    display: block;
+    margin-left: 10px;
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+.about-profile-text {
+  margin-top: 30px;
+  line-height: 1.7;
+
+  @include mq(md-max) {
+    margin-top: 40px;
+  }
+
+  @include mq(sm) {
+    text-align: left;
+  }
+}

@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+@import "config";
+
+/* skills
+------------------------------------------------------ */
+.skills-title {
+  @include util-title(40.8%);
+
+  @include mq(sm) {
+    @include util-title(calc(100% - 90px));
+  }
+}
+
+.skills-text-inline {
+  color: $accent-dark-color;
+  font-weight: bold;
+}
+
+.skills-list {
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 33px auto 0;
+    width: 740px;
+  }
+
+  @include mq(md-max) {
+    width: 640px;
+  }
+
+  @include mq(sm) {
+    width: 100%;
+  }
+}
+
+.skills-items {
+  text-align: center;
+  
+  @include mq(md) {
+    width: calc(33.33333333% - 40px * 2 / 3);
+    margin-right: 40px;
+    margin-top: 47px;
+  }
+
+  @include mq(sm) {
+    margin-top: 60px;
+    margin-right: 0;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.skills-item-img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+  @include mq(md) {
+    height: 125px;
+  }
+
+  @include mq(sm) {
+    margin: 0 auto;
+  }
+
+  img {
+    width: 125px;
+  }
+}
+
+.skills-item-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: $base-black-color;
+  margin-top: 16px;
+
+  @include mq(sm) {
+    font-size: 18px;
+  }
+}

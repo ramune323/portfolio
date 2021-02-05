@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@import "config";
+
+/* header
+------------------------------------------------------ */
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: solid 2px $base-black-color;
+
+  @include mq(sm) {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .drawer-hamburger {
+    .drawer-open & {
+      right: 200px;
+    }
+  }
+
+  .drawer-hamburger-icon {
+    background-color: $base-black-color;
+    
+    .drawer-open & {
+      background-color: transparent;
+    }
+  
+    &::before,
+    &::after {
+      background-color: $base-black-color;
+    }
+  }
+
+  .drawer-nav {
+    @include mq(sm) {
+      width: 200px;
+    }
+  }
+}
+
+
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 60px;
+
+  @include mq(sm) {
+    width: 40px;
+  }
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav-list {
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.header-nav-item {
+  & + & {
+    @include mq(md) {
+      margin-left: 42px;
+    }
+  }
+
+  @include mq(sm) {
+    text-align: center;
+  }
+
+  .current {
+    transition: .2s;
+    color: $accent-dark-color;
+  }
+}
+
+.header-nav-item-link {
+  display: block;
+  color: $base-gray-color;
+  font-weight: bold;
+  height: 70px;
+  line-height: 70px;
+}

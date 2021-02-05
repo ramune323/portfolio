@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+@import "config";
+
+/* works
+------------------------------------------------------ */
+.works-title {
+  @include util-title(40.4%);
+
+  @include mq(sm) {
+    @include util-title(calc(100% - 96px));
+  }
+}
+
+.works-list {
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+.works-list-items {
+  width: calc(33.33333333% - 50px * 2 / 3);
+  margin-right: 50px;
+  background-color: #fff;
+  box-shadow: 3px 3px 6px $base-gray-color;
+  margin-top: 90px;
+
+  @include mq(lg) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  
+  @include mq(md-max) {
+    width: calc(50% - 50px * 1 / 2);
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq(sm) {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 60px;
+  }
+}
+
+.works-item-link {
+  &:hover {
+    .works-item-img > img {
+      transform: translateY(-50%) scale(1.06);
+    }
+  }
+}
+
+.works-item-img {
+  height: 0;
+  padding-top: 66.6666%;
+  position: relative;
+  overflow: hidden;
+
+  > img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform .2s;
+  }
+}
+
+.works-item-body {
+  padding: 20px 24px;
+}
+
+.works-item-text {
+  margin: 20px 0;
+}
+
+.works-item-icon {
+  color: $base-gray-color;
+  font-size: 12px;
+  padding: 5px 0;
+  padding-left: 25px;
+  display: inline-block;
+  transition: .2s;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+.github {
+  background: url(/img/github.png) no-repeat center left / 20px 20px;
+}
+
+.xd {
+  margin-left: 20px;
+  background: url(/img/xd-icon.png) no-repeat center left / 20px 20px;
+}

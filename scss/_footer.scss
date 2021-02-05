@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import "config";
+
+/* footer
+------------------------------------------------------ */
+.footer {
+  background-color: $base-gray-color;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-copyright {
+  font-size: 14px;
+
+  @include mq(sm) {
+    font-size: 12px;
+  }
+}

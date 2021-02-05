@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@import "config";
+
+/* top
+------------------------------------------------------ */
+.top {
+  position: relative;
+  height: 80vh;
+}
+
+.top-img {
+  &::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+
+    @include mq(md) {
+      background-image: url(/img/top.jpg);
+    }
+    
+    @include mq(sm) {
+      background-image: url(/img/top_sp.jpg);
+    }
+  }
+}
+
+.top-message {
+  position: absolute;
+  display: block;
+  top: 22.2857%;
+  left: 7.8125%;
+
+  @include mq(sm) {
+    top: 14%;
+  }
+}
+
+.top-title {
+  color: $base-black-color;
+  font-size: 48px;
+  font-weight: bold;
+
+  @include mq(md-max) {
+    font-size: 32px;
+  }
+
+  @include mq(sm) {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+}
+
+.top-subtitle {
+  color: $base-gray-color;
+  font-size: 20px;
+  margin: 32px 0 100px;
+
+  @include mq(md) {
+    font-size: 18px;
+    margin: 24px 0 80px;
+  }
+
+  @include mq(sm) {
+    font-size: 14px;
+    margin: 20px 0 50px;
+  }
+}
+
+.top-contact-btn {
+  font-size: 20px;
+  color: $base-gray-color;
+  background: transparent;
+  padding: 20px 40px;
+  border: solid 1px $base-black-color;
+  transition: .2s;
+
+  @include mq(md) {
+    font-size: 18px;
+  }
+
+  @include mq(sm) {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  &:hover {
+    background-color: $base-gray-color;
+    color: #fff;
+  }
+}
