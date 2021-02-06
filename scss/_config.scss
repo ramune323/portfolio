@@ -108,6 +108,13 @@ a {
   padding-top: 160px;
 }
 
+.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
 /* util
 ------------------------------------------------------ */
 @mixin util-title($width) {

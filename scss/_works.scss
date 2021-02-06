@@ -99,3 +99,38 @@
   margin-left: 20px;
   background: url(/img/xd-icon.png) no-repeat center left / 20px 20px;
 }
+
+
+/* modal
+------------------------------------------------------ */
+.for-modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.modal-bg {
+  background: rgba(0,0,0,.7);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 101;
+}
+
+.modal-content {
+  z-index: 102;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+  height: 90vh;
+
+  @include mq(sm) {
+    height: 80vh;
+    width: 70%;
+  }
+}
