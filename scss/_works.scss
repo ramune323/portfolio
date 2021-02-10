@@ -130,7 +130,6 @@
   height: 90vh;
 
   @include mq(sm) {
-    height: 80vh;
     width: 70%;
   }
 }
