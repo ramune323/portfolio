@@ -40,10 +40,16 @@
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -129,7 +135,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }
@@ -173,10 +178,16 @@ a:hover {
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -262,7 +273,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }
@@ -283,18 +293,25 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 100;
-  border-bottom: solid 2px #333;
+  -webkit-box-shadow: 0 2px 8px 0 #707070;
+          box-shadow: 0 2px 8px 0 #707070;
 }
 
 @media screen and (max-width: 767px) {
   .header {
-    height: 60px;
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header .drawer-hamburger {
+    top: -4px;
   }
 }
 
@@ -330,12 +347,12 @@ a:hover {
 }
 
 .header-logo {
-  width: 60px;
+  width: 40px;
 }
 
 @media screen and (max-width: 767px) {
   .header-logo {
-    width: 40px;
+    width: 30px;
   }
 }
 
@@ -409,10 +426,16 @@ a:hover {
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -498,7 +521,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }
@@ -546,8 +568,8 @@ a:hover {
 .top-message {
   position: absolute;
   display: block;
-  top: 22.2857%;
-  left: 7.8125%;
+  top: 20%;
+  left: 8%;
 }
 
 @media screen and (max-width: 767px) {
@@ -560,6 +582,16 @@ a:hover {
   color: #333;
   font-size: 48px;
   font-weight: bold;
+}
+
+.top-title img {
+  width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+  .top-title img {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -584,14 +616,14 @@ a:hover {
 @media screen and (min-width: 768px) {
   .top-subtitle {
     font-size: 18px;
-    margin: 24px 0 80px;
+    margin: 40px 0 60px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .top-subtitle {
     font-size: 14px;
-    margin: 20px 0 50px;
+    margin: 30px 0 40px;
   }
 }
 
@@ -655,10 +687,16 @@ a:hover {
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -744,7 +782,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }
@@ -953,7 +990,6 @@ a:hover {
 
 .about-profile-text {
   margin-top: 30px;
-  line-height: 1.7;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1000,10 +1036,16 @@ a:hover {
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -1089,7 +1131,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }
@@ -1336,10 +1377,16 @@ a:hover {
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -1425,7 +1472,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }
@@ -1712,10 +1758,16 @@ a:hover {
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -1801,7 +1853,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }
@@ -2039,10 +2090,16 @@ a:hover {
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -2128,7 +2185,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }
@@ -2199,10 +2255,16 @@ a:hover {
 body {
   color: #707070;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -2288,7 +2350,6 @@ a:hover {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 }

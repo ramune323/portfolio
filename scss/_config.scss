@@ -59,10 +59,14 @@ $accent-dark-color: #D08C49;
 body {
   color: $base-gray-color;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   letter-spacing: .08em;
   font-size: 16px;
   -webkit-text-size-adjust: none;
+
+  @include mq(sm) {
+    font-size: 14px;
+  }
 }
 
 img {
@@ -188,7 +192,6 @@ a {
 }
 
 .util-text {
-  font-size: 16px;
   text-align: center;
   margin-top: 80px;
 

@@ -11,15 +11,19 @@
   left: 0;
   right: 0;
   z-index: 100;
-  border-bottom: solid 2px $base-black-color;
+  box-shadow: 0 2px 8px 0 $base-gray-color;
 
   @include mq(sm) {
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
   }
 
   .drawer-hamburger {
+    @include mq(sm) {
+      top: -4px;
+    }
+
     .drawer-open & {
       right: 200px;
     }
@@ -52,10 +56,10 @@
 }
 
 .header-logo {
-  width: 60px;
+  width: 40px;
 
   @include mq(sm) {
-    width: 40px;
+    width: 30px;
   }
 }
 

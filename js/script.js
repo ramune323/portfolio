@@ -5,7 +5,7 @@ $(function() {
   // textillate
   $('.js-top-title').textillate();
   $('.js-top-subtitle').textillate( {
-    initialDelay: 550
+    initialDelay: 350
   });
 
   // wow

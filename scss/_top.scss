@@ -36,8 +36,8 @@
 .top-message {
   position: absolute;
   display: block;
-  top: 22.2857%;
-  left: 7.8125%;
+  top: 20%;
+  left: 8%;
 
   @include mq(sm) {
     top: 14%;
@@ -48,6 +48,14 @@
   color: $base-black-color;
   font-size: 48px;
   font-weight: bold;
+
+  img {
+    width: 60%;
+
+    @include mq(sm) {
+      width: 80%;
+    }
+  }
 
   @include mq(md-max) {
     font-size: 32px;
@@ -66,12 +74,12 @@
 
   @include mq(md) {
     font-size: 18px;
-    margin: 24px 0 80px;
+    margin: 40px 0 60px;
   }
 
   @include mq(sm) {
     font-size: 14px;
-    margin: 20px 0 50px;
+    margin: 30px 0 40px;
   }
 }
 
