@@ -36,12 +36,8 @@
 .top-message {
   position: absolute;
   display: block;
-  top: 20%;
+  top: 12%;
   left: 8%;
-
-  @include mq(sm) {
-    top: 14%;
-  }
 }
 
 .top-title {
@@ -50,7 +46,7 @@
   font-weight: bold;
 
   img {
-    width: 60%;
+    width: 70%;
 
     @include mq(sm) {
       width: 80%;
@@ -67,19 +63,30 @@
   }
 }
 
+.top-main-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+
+  @include mq(sm) {
+    width: 80%
+  }
+}
+
 .top-subtitle {
   color: $base-gray-color;
   font-size: 20px;
-  margin: 32px 0 100px;
+  // margin: 32px 0 100px;
 
   @include mq(md) {
     font-size: 18px;
-    margin: 40px 0 60px;
+    margin: 10px 0 60px;
   }
 
   @include mq(sm) {
     font-size: 14px;
-    margin: 30px 0 40px;
+    margin: 5px 0 50px;
   }
 }
 

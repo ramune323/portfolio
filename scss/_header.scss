@@ -5,7 +5,7 @@
 /* header
 ------------------------------------------------------ */
 .header {
-  background-color: #fff;
+  background-color: rgba(230,230,230,0.3);
   position: fixed;
   top: 0;
   left: 0;
@@ -14,16 +14,12 @@
   box-shadow: 0 2px 8px 0 $base-gray-color;
 
   @include mq(sm) {
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
   }
 
   .drawer-hamburger {
-    @include mq(sm) {
-      top: -4px;
-    }
-
     .drawer-open & {
       right: 200px;
     }

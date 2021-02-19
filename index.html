@@ -6,8 +6,7 @@
   <title>Kyoko's Portfolio</title>
   <meta name="description" content="ポートフォリオサイトです">
 
-  <link rel="icon" href="/img/favicon(1).ico">
-  <link rel="icon" href="/img/apple-touch-icon-180x180.png" sizes="180x180">
+  <link rel="icon" href="/img/favicon.ico">
 
   <!-- reset css -->
   <link rel="stylesheet" href="/css/reset.css">
@@ -29,6 +28,8 @@
   <script src="/js/jquery.textillate.js"></script>
   <script src="/js/jquery.fittext.js"></script>
   <script src="/js/jquery.lettering.js"></script>
+  <!-- vivus -->
+  <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
   <!-- original -->
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/script.js"></script>
@@ -63,12 +64,32 @@
     <!-- top -->
     <section id="top" class="top">
       <div class="top-message">
-        <!-- <h1 class="top-title js-top-title" data-in-effect="fadeInLeft" data-in-delayScale="0.6">Welcome to my Portfolio Site!</h1> -->
-        <h1 class="top-title wow fadeInDown">
-          <img src="/img/main-logo.png" alt="">
+        <h1 class="top-title">
+          <img class="wow fadeInDown" src="/img/main_logo2.png" alt="">
+
+          <div class="svgwrap top-main-logo">
+            <svg version="1.1" id="mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 680 300" style="enable-background:new 0 0 680 300;" xml:space="preserve">
+              <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/main_logo.png" width="680" height="300" mask="url(#clipMask)"></image>
+        
+              <mask id="clipMask" maskUnits="objectBoundingBox">
+                <path id="マスク" class="cls-1" d="M14,66l-4,93"/>
+                <path id="シェイプ_1" data-name="シェイプ 1" class="cls-1" d="M82,58s-15.05,44.208-61,53"/>
+                <path id="シェイプ_2" data-name="シェイプ 2" class="cls-1" d="M28,113"/>
+                <path id="シェイプ_3" data-name="シェイプ 3" class="cls-1" d="M29,112c13.436,26.324,36.317,38.374,54,34,7.148-1.768,13.5-6.24,18.8-12.8"/>
+                <path id="シェイプ_4" data-name="シェイプ 4" class="cls-1" d="M111,58l58,59"/>
+                <path id="シェイプ_5" data-name="シェイプ 5" class="cls-2" d="M237,55l-65,57"/>
+                <path id="シェイプ_6" data-name="シェイプ 6" class="cls-3" d="M170,118l1,95"/>
+                <path id="シェイプ_7" data-name="シェイプ 7" class="cls-4" d="M275,69s-14.866,12.343-20,27-8,35-8,35a139.456,139.456,0,0,0,8,13c10.854,6.365,25.53,5.941,40,0s27.364-19.635,31-25c2.965-6.954,6.974-16.263,2-30-9.01-13.527-14.623-20.09-27-23S275,69,275,69Z"/>
+                <path id="シェイプ_8" data-name="シェイプ 8" class="cls-4" d="M420,92l2-19s-9.008-10.786-22-11c-13.453,4.968-20.572,13.252-25,30s-5.56,15.855-6,36c9.58,21.894,14.792,24.311,29,24,16.763-4.914,29.649-11.07,36-18a125.385,125.385,0,0,0,11-14"/>
+                <path id="シェイプ_9" data-name="シェイプ 9" class="cls-4" d="M507,67s-15.294,6.95-20,24c-9.7,18.391-9.611,22.568-12,39,6.474,19.166,13.6,24.836,33,20,19.257-8.012,39.484-19.9,45-28,5.133-9.167,7.453-15.879,6-30-10.019-14.466-14.745-22.856-29-25C515.884,67.021,507,67,507,67Z"/>
+                <path id="シェイプ_10" data-name="シェイプ 10" class="cls-5" d="M603,85l-10,23"/>
+                <path id="シェイプ_11" data-name="シェイプ 11" class="cls-6" d="M638,106s-8.054-5.393-19,0c-10.389,9.591-9.253,10.068-10,19,10.11,8.228,22.371,9.678,29,15s17.7,15.814,18,35c-5,30.147-6.759,29.806-18,42-14.9,10.962-26.142,16.591-40,20s-39.437,8.169-55,4c-11.924-7.215-13-10-13-10"/>
+              </mask>
+            </svg>
+          </div>
         </h1>
         <p class="top-subtitle js-top-subtitle" data-in-effect="bounceIn" data-in-delayScale="0.6">アクセスいただきありがとうございます</p>
-        <div class="wow fadeInLeft" data-wow-delay="1.6s"><a href="#contact" class="top-contact-btn">CONTACT</a></div>
+        <div class="wow fadeInLeft" data-wow-delay="3s"><a href="#contact" class="top-contact-btn">CONTACT</a></div>
       </div>
     </section>
     <!-- /.top -->
@@ -151,7 +172,7 @@
               <p class="works-item-title">制作期間：10日間</p>
               <p class="works-item-text">XDでデザインカンプを作成し、一からコーディングしたポートフォリオサイトです。ロゴとトップのタイトル画像はPhotoshopで作成しました。</p>
               <a href="https://github.com/ramune323/portfolio" class="works-item-icon github">GitHub</a>
-              <a href="" class="works-item-icon xd js-modal-open" data-target="for-modal">XD</a>
+              <a href="" class="works-item-icon xd">XD</a>
             </div>
           </li>
           <li class="works-list-items wow fadeInUp" data-wow-delay=".1s">
@@ -176,13 +197,6 @@
           </li>
         </ul>
       </section>
-      <!-- modal -->
-      <div class="for-modal js-modal">
-        <div class="modal-bg js-modal-close"></div>
-        <div class="modal-content">
-          <div class="modal-img"><img src="/img/design.jpg" alt=""></div>
-        </div>
-      </div>
       <!-- /.works -->
   
       <!-- contact -->

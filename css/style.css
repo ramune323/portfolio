@@ -287,7 +287,7 @@ a:hover {
 /* header
 ------------------------------------------------------ */
 .header {
-  background-color: #fff;
+  background-color: rgba(230, 230, 230, 0.3);
   position: fixed;
   top: 0;
   left: 0;
@@ -299,19 +299,13 @@ a:hover {
 
 @media screen and (max-width: 767px) {
   .header {
-    height: 50px;
+    height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header .drawer-hamburger {
-    top: -4px;
   }
 }
 
@@ -568,14 +562,8 @@ a:hover {
 .top-message {
   position: absolute;
   display: block;
-  top: 20%;
+  top: 12%;
   left: 8%;
-}
-
-@media screen and (max-width: 767px) {
-  .top-message {
-    top: 14%;
-  }
 }
 
 .top-title {
@@ -585,7 +573,7 @@ a:hover {
 }
 
 .top-title img {
-  width: 60%;
+  width: 70%;
 }
 
 @media screen and (max-width: 767px) {
@@ -607,23 +595,35 @@ a:hover {
   }
 }
 
+.top-main-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+}
+
+@media screen and (max-width: 767px) {
+  .top-main-logo {
+    width: 80%;
+  }
+}
+
 .top-subtitle {
   color: #707070;
   font-size: 20px;
-  margin: 32px 0 100px;
 }
 
 @media screen and (min-width: 768px) {
   .top-subtitle {
     font-size: 18px;
-    margin: 40px 0 60px;
+    margin: 10px 0 60px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .top-subtitle {
     font-size: 14px;
-    margin: 30px 0 40px;
+    margin: 5px 0 50px;
   }
 }
 
@@ -2413,4 +2413,38 @@ a:hover {
 #page_top a:hover {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
+}
+
+/* svg
+------------------------------------------------------ */
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill-rule: evenodd;
+}
+
+.cls-1 {
+  stroke-width: 17.89px;
+}
+
+.cls-2 {
+  stroke-width: 19.81px;
+}
+
+.cls-3 {
+  stroke-width: 22.38px;
+}
+
+.cls-4 {
+  stroke-width: 21.1px;
+}
+
+.cls-5 {
+  stroke-width: 12.76px;
+}
+
+.cls-6 {
+  stroke-width: 19.8px;
 }

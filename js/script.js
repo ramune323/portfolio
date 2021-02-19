@@ -5,7 +5,7 @@ $(function() {
   // textillate
   $('.js-top-title').textillate();
   $('.js-top-subtitle').textillate( {
-    initialDelay: 350
+    initialDelay: 1400
   });
 
   // wow
@@ -78,24 +78,11 @@ $(function() {
     stepMenu();
   });
 
-  // modal
-  var scrollPosition;
-  $('.js-modal-open').on('click', function(e) {
-    e.preventDefault();
-    let target = $(this).data("target");
-    $('.' + target).fadeIn();
-    // モーダル内のスクロール開始位置
-    $('.modal-content').scrollTop(0);
-    // 背景固定
-    scrollPosition = $(window).scrollTop();
-    $('body').addClass('fixed').css({'top':-scrollPosition});
-  });
-  
-  $('.modal-bg').on('click', function() {
-    $('.js-modal').fadeOut();
-    // 背景固定解除
-    $('body').removeClass('fixed').css({'top': 0});
-    window.scrollTo(0, scrollPosition);
-    return false;
-  });
+  // vivus
+  new Vivus('mask', {
+    type: 'oneByOne',
+    duration: 190,
+    forceRender: false,
+    animTimingFunction: Vivus.EASE
+  })
 });
