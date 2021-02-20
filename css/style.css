@@ -38,7 +38,7 @@
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
@@ -176,7 +176,7 @@ a:hover {
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
@@ -293,8 +293,8 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 100;
-  -webkit-box-shadow: 0 2px 8px 0 #707070;
-          box-shadow: 0 2px 8px 0 #707070;
+  -webkit-box-shadow: 0 2px 8px 0 #666;
+          box-shadow: 0 2px 8px 0 #666;
 }
 
 @media screen and (max-width: 767px) {
@@ -382,7 +382,7 @@ a:hover {
 
 .header-nav-item-link {
   display: block;
-  color: #707070;
+  color: #666;
   font-weight: bold;
   height: 70px;
   line-height: 70px;
@@ -418,7 +418,7 @@ a:hover {
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
@@ -609,7 +609,7 @@ a:hover {
 }
 
 .top-subtitle {
-  color: #707070;
+  color: #666;
   font-size: 20px;
 }
 
@@ -629,7 +629,7 @@ a:hover {
 
 .top-contact-btn {
   font-size: 20px;
-  color: #707070;
+  color: #666;
   background: transparent;
   padding: 20px 40px;
   border: solid 1px #333;
@@ -651,7 +651,7 @@ a:hover {
 }
 
 .top-contact-btn:hover {
-  background-color: #707070;
+  background-color: #666;
   color: #fff;
 }
 
@@ -685,7 +685,7 @@ a:hover {
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
@@ -1034,7 +1034,7 @@ a:hover {
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
@@ -1337,6 +1337,7 @@ a:hover {
   font-weight: bold;
   color: #333;
   margin-top: 16px;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 767px) {
@@ -1375,7 +1376,7 @@ a:hover {
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
@@ -1607,8 +1608,8 @@ a:hover {
   width: calc(33.33333333% - 50px * 2 / 3);
   margin-right: 50px;
   background-color: #fff;
-  -webkit-box-shadow: 3px 3px 6px #707070;
-          box-shadow: 3px 3px 6px #707070;
+  -webkit-box-shadow: 3px 3px 6px #666;
+          box-shadow: 3px 3px 6px #666;
   margin-top: 90px;
 }
 
@@ -1667,7 +1668,7 @@ a:hover {
 }
 
 .works-item-icon {
-  color: #707070;
+  color: #666;
   font-size: 12px;
   padding: 5px 0;
   padding-left: 25px;
@@ -1756,7 +1757,7 @@ a:hover {
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
@@ -2088,7 +2089,7 @@ a:hover {
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
@@ -2199,7 +2200,7 @@ a:hover {
 /* footer
 ------------------------------------------------------ */
 .footer {
-  background-color: #707070;
+  background-color: #666;
   color: #fff;
   height: 80px;
   display: -webkit-box;
@@ -2253,7 +2254,7 @@ a:hover {
 }
 
 body {
-  color: #707070;
+  color: #666;
   font-family: 'Open Sans', 'ヒラギノ角ゴシック', sans-serif;
   line-height: 2;
   letter-spacing: .08em;
